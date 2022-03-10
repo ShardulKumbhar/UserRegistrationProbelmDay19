@@ -8,7 +8,7 @@ public class FirstNameValidation {
 		/**
 		 * Procedure
 		 * ====================================================
-		 *  1.Taking user input of first name
+		 *  1.Taking user input of first name and last name
 		 *  3.calling method to print true false
 		 *  2.created method to check 1st letter 
 		 *  is capital and has minimum 3 letters
@@ -16,16 +16,22 @@ public class FirstNameValidation {
 		 */
 
 		/*
-		 * 1.Taking user input of first name
+		 * 1.Taking user input of first name and last name
 		 */
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Enter the first Name ");
-		String name = sc.nextLine();
-
+		
 		/*
 		 * 3.calling method to print true false
 		 */
-		System.out.println(name(name));
+		System.out.println("Enter the first Name ");
+		String fname = sc.nextLine();
+		System.out.println(name(fname));
+		
+		System.out.println("\nEnter the Last Name ");
+		String lname = sc.nextLine();
+		System.out.println(name(lname));
+		
+		
 	}
 
 	/*
