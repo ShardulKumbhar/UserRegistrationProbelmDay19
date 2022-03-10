@@ -34,8 +34,8 @@ public class Password {
 	 * 3.created method to check password must minimum 8 char and have minimum 1
 	 * uppercase
 	 */
-	public static boolean number(String number) {
-		return number.matches("^(?=.*[A-Z]).{8,}$");
+	public static boolean number(String password) {
+		return password.matches("^(?=.*[A-Z]).{8,}$");
 
 	}
 }
