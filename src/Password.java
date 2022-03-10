@@ -2,25 +2,25 @@ import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class MobileNumber {
+public class Password {
 
 	public static void main(String[] args) {
 		/**
 		 * Procedure
 		 * ====================================================
-		 *  1.Taking user input of country code and mobile number
+		 *  1.Taking user input password
 		 *  2.calling method to print true false
-		 *  3.created method to check country code and mobile number 
+		 *  3.created method to check password must minimum 8 char 
 		 *  ==================================================
 		 */
 
 		/*
-		 * 1.Taking user input of country code and mobile number
+		 * 1.Taking user input password
 		 */
 		Scanner sc = new Scanner(System.in);
 
-		System.out.println("Example 91 9846521868 ");
-		System.out.println("Enter country code and mobile number ");
+		System.out.println("Example  ");
+		System.out.println("Enter the Password here ");
 		String mblno = sc.nextLine();
 		/*
 		 * 2.calling method to print true false
@@ -31,9 +31,9 @@ public class MobileNumber {
 	}
 
 	/*
-	 * 3.created method to check country code and mobile number
+	 * 3.created method to check password must minimum 8 char
 	 */
 	public static boolean number(String number) {
-		return number.matches("[0-9]{2}\s[0-9]{10}");
+		return number.matches("[a-z]{8,}");
 	}
 }
