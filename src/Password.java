@@ -21,11 +21,11 @@ public class Password {
 
 		System.out.println("Example  ");
 		System.out.println("Enter the Password here ");
-		String mblno = sc.nextLine();
+		String password = sc.nextLine();
 		/*
 		 * 2.calling method to print true false
 		 */
-		System.out.println(number(mblno));
+		System.out.println(number(password));
 		;
 
 	}
@@ -33,7 +33,7 @@ public class Password {
 	/*
 	 * 3.created method to check password must minimum 8 char
 	 */
-	public static boolean number(String number) {
-		return number.matches("[a-z A-Z]{8,}");
+	public static boolean number(String password) {
+		return password.matches("[a-z A-Z]{8,}");
 	}
 }
