@@ -8,32 +8,33 @@ public class Password {
 		/**
 		 * Procedure
 		 * ====================================================
-		 *  1.Taking user input password
+		 *  1.Taking user input password for scanner class
 		 *  2.calling method to print true false
-		 *  3.created method to check password must minimum 8 char 
+		 *  3.created method to check password must minimum 8 char and have minimum 1 uppercase
 		 *  ==================================================
 		 */
 
 		/*
-		 * 1.Taking user input password
+		 * 1.Taking user input password for scanner class
 		 */
 		Scanner sc = new Scanner(System.in);
 
-		System.out.println("Example  ");
-		System.out.println("Enter the Password here ");
-		String mblno = sc.nextLine();
+		System.out.println("please give minimum one upper case ");
+		System.out.println("Enter the Password here : ");
+		String password = sc.nextLine();
 		/*
 		 * 2.calling method to print true false
 		 */
-		System.out.println(number(mblno));
-		;
+		System.out.println(number(password));
 
 	}
 
 	/*
-	 * 3.created method to check password must minimum 8 char
+	 * 3.created method to check password must minimum 8 char and have minimum 1
+	 * uppercase
 	 */
 	public static boolean number(String number) {
-		return number.matches("[a-z A-Z]{8,}");
+		return number.matches("^(?=.*[A-Z]).{8,}$");
+
 	}
 }
