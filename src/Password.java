@@ -10,7 +10,8 @@ public class Password {
 		 * ====================================================
 		 *  1.Taking user input password for scanner class
 		 *  2.calling method to print true false
-		 *  3.created method to check password must minimum 8 char and have minimum 1 uppercase
+		 *  3.created method to check password must minimum 
+		 *  8 char and have minimum 1 uppercase
 		 *  ==================================================
 		 */
 
@@ -19,8 +20,8 @@ public class Password {
 		 */
 		Scanner sc = new Scanner(System.in);
 
-		System.out.println("please give minimum one upper case ");
-		System.out.println("Enter the Password here : ");
+		System.out.println("please Enter Minimum one upper case and 8 Char ");
+		System.out.println("\nEnter the Password here : ");
 		String password = sc.nextLine();
 		/*
 		 * 2.calling method to print true false
