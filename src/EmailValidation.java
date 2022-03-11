@@ -19,7 +19,7 @@ public class EmailValidation {
 		 */
 		Scanner sc = new Scanner(System.in);
 
-		System.out.println("Example: govind123@gmail.com\n");
+		System.out.println("Example: xyz12@bl.co.in \n");
 		System.out.println("Enter the Email address : ");
 		String emailId = sc.nextLine();
 		/*
@@ -34,7 +34,7 @@ public class EmailValidation {
 	 * one . min 3 char at last
 	 */
 	public static boolean email(String email) {
-		return email.matches("[a-z]{3,}[0-9]{2,}@{1}[a-z]{2,}[.][a-z]{3}");
+		return email.matches("([a-z]+[0-9]+@bl[.]co[.]in)*");
 
 	}
 }
