@@ -10,8 +10,8 @@ public class Password {
 		 * ====================================================
 		 *  1.Taking user input password for scanner class
 		 *  2.calling method to print true false
-		 *  3.created method to check password must minimum 
-		 *    8 char and have minimum 1 uppercase and one number
+		 *  3.created method to check password contain atleast one special char 
+		 *  
 		 *  ==================================================
 		 */
 
@@ -21,7 +21,7 @@ public class Password {
 		Scanner sc = new Scanner(System.in);
 
 		System.out.println("please Enter Minimum one upper case and 8 Char ");
-		System.out.println("\nEnter the Password here : ");
+		System.out.println("\nEnter the Password here ");
 		String password = sc.nextLine();
 		/*
 		 * 2.calling method to print true false
@@ -31,11 +31,11 @@ public class Password {
 	}
 
 	/*
-	 * 3.created method to check password must minimum 8 char and have minimum 1
-	 * uppercase and one number
+	 * 3.created method to check password atleast contain one special char
+	 * 
 	 */
 	public static boolean number(String password) {
-		return password.matches("^(?=.*[A-Z]+)(?=.*[0-9]+)(?=.*[a-z]+).{8,}$");
+		return password.matches("^(?=.*\\d)(?=.*[a-z])(?=.*[A-Z])[a-zA-Z0-9]*[\\@\\#\\^][a-zA-Z0-9]*$");
 
 	}
 }
